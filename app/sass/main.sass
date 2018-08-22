@@ -3,564 +3,572 @@
 @import "libs"
 
 ::placeholder
-	color: #666
+  color: #666
 
 ::selection
-	background-color: $accent
-	color: #fff
+  background-color: $accent
+  color: #fff
 
 body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.65
-	font-family: $default-font
-	overflow-x: hidden
-	color: $text
-	input, textarea
-		border: #666 1px solid
-		outline: none
-		&:focus:required:invalid
-			border-color: red
-		&:required:valid
-			border-color: green
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  font-family: $default-font
+  overflow-x: hidden
+  color: $text
+  input, textarea
+    border: #666 1px solid
+    outline: none
+    &:focus:required:invalid
+      border-color: red
+    &:required:valid
+      border-color: green
 
 .img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-	&.img-width
-		width: 100%
+  display: block
+  max-width: 100%
+  height: auto
+  &.img-width
+    width: 100%
 
 .text-center
-	text-align: center
+  text-align: center
 
 b, strong
-	font-weight: bold
+  font-weight: bold
 
 .container-fluid
-	padding: 0
+  padding: 0
 
 .container
-	padding: 0
+  padding: 0
 
 .hero
-	nav
-		height: 140px
-		display: flex
-		align-items: center
-		justify-content: space-between
-		color: #282828
+  nav
+    height: 140px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: #282828
 
+  ul
+    list-style-type: none
+    padding: 0
+    font-family: "Playfair Display"
+    font-style: normal
+    font-weight: normal
+    margin: 0 0 0 9px
+    font-size: 18px
+    li
+      display: inline-block
+      &:nth-child(2)
+        margin-left: 17px
 
-	ul
-		list-style-type: none
-		padding: 0
-		font-family: "Playfair Display"
-		font-style: normal
-		font-weight: normal
-		margin: 0 0 0 9px
-		font-size: 18px
-		li
-			display: inline-block
-			&:nth-child(2)
-				margin-left: 17px
+      &:last-child
+        margin-left: 20px
+      a
+        color: #282828
 
-			&:last-child
-				margin-left: 20px
-			a
-				color: #282828
+        &:hover
+          text-decoration: none
 
-				&:hover
-					text-decoration: none
+  &__logo
+    text-align: center
 
-	&__logo
-		text-align: center
+  &__bin
+    position: relative
+    display: flex
+    align-items: center
+    padding-left: 110px
 
-	&__bin
-		position: relative
-		display: flex
-		align-items: center
-		padding-left: 110px
+    &__icon:before
+      content: '2'
+      position: absolute
+      top: 1px
+      left: 150px
+      font-family: robotoBold
+      background-color: #6a5abc
+      border-radius: 40px
+      width: 40px
+      height: 40px
+      text-align: center
+      font-size: 18px
+      line-height: 35px
+      color: #fff
+      display: flex
+      justify-content: center
+      align-items: center
 
-		&__icon:before
-			content: '2'
-			position: absolute
-			top: 1px
-			left: 150px
-			font-family: robotoBold
-			background-color: #6a5abc
-			border-radius: 40px
-			width: 40px
-			height: 40px
-			text-align: center
-			font-size: 18px
-			line-height: 35px
-			color: #fff
-			display: flex
-			justify-content: center
-			align-items: center
+    &__link
+      font-family: "Playfair Display"
+      font-weight: bold
+      font-style: normal
+      font-size: 18px
+      color: #282828
+      margin-left: 40px
 
-		&__link
-			font-family: "Playfair Display"
-			font-weight: bold
-			font-style: normal
-			font-size: 18px
-			color: #282828
-			margin-left: 40px
+      &:hover
+        text-decoration: underline
+        color: black
 
-			&:hover
-				text-decoration: underline
-				color: black
+  &__content
+    position: relative
+    background-size: cover
+    background: url('../img/heroBg.png') no-repeat center center
+    min-height: 800px
+    color: white
+    font-family: "Playfair Display"
+    display: flex
 
-	&__content
-		position: relative
-		background-image: url('../img/heroBg.png')
-		min-height: 800px
-		color: white
-		font-family: "Playfair Display"
-		display: flex
+    img
+      position: absolute
+      right: 0
+      left: 19px
+      top: -20px
+      margin: 0 auto
 
-		img
-			position: absolute
-			right: 0
-			left: 19px
-			top: -20px
-			margin: 0 auto
+    div
+      margin-top: 213px
 
-		div
-			margin-top: 213px
+    h1
+      font-weight: normal
+      font-size: 109px
+      padding-left: 16px
+      margin-bottom: 24px
+      font-weight: 400
+      line-height: 16px
 
-		h1
-			font-weight: normal
-			font-size: 109px
-			padding-left: 16px
-			margin-bottom: 24px
-			font-weight: 400
-			line-height: 16px
+    h2
+      font-weight: bold
+      font-size: 82px
+      font-style: italic
+      letter-spacing: 1px
+      padding-left: 18px
+      margin-bottom: 12px
 
-		h2
-			font-weight: bold
-			font-size: 82px
-			font-style: italic
-			letter-spacing: 1px
-			padding-left: 18px
-			margin-bottom: 12px
+    h3
+      font-family: robotoRegular
+      text-transform: uppercase
+      font-size: 43px
+      font-weight: 300
+      padding-left: 30px
+      letter-spacing: 19.5px
+      margin-bottom: 11px
+      line-height: 77px
 
-		h3
-			font-family: robotoRegular
-			text-transform: uppercase
-			font-size: 43px
-			font-weight: 300
-			padding-left: 30px
-			letter-spacing: 19.5px
-			margin-bottom: 11px
-			line-height: 77px
+    button
+      width: 400px
+      height: 100px
+      background-color: transparent
+      border: solid 6px #f6dcb2
+      font-size: 24px
+      font-family: Roboto
+      font-weight: normal
+      color: white
+      letter-spacing: 3.3px
+      margin-top: 32px
+      margin-left: 16px
+      text-transform: uppercase
+      padding-left: 9px
+      padding-bottom: 2px
+      transition: 0.33s
+      cursor: pointer
 
-		button
-			width: 400px
-			height: 100px
-			background-color: transparent
-			border: solid 6px #f6dcb2
-			font-size: 24px
-			font-family: Roboto
-			font-weight: normal
-			color: white
-			letter-spacing: 3.3px
-			margin-top: 32px
-			margin-left: 16px
-			text-transform: uppercase
-			padding-left: 9px
-			padding-bottom: 2px
-			transition: 0.33s
-			cursor: pointer
-
-			&:hover
-				color: white
-				background-color: #f6dcb2
+      &:hover
+        color: white
+        background-color: #f6dcb2
 
 .catalog
-	padding-left: 16px
-	&__content
-		min-height: 2004px
-		padding-top: 120px
+  background: url("../img/flower.png") no-repeat 17.8% 5%
+  padding-left: 16px
+  &__content
+    min-height: 2004px
+    padding-top: 120px
 
-		&__header
-			height: 80px
-			display: flex
+    &__header
+      height: 80px
+      display: flex
 
-			h2
-				width: 820px
-				text-transform: uppercase
-				text-align: center
-				font-size: 56px
-				font-family: Roboto
-				font-weight: 300
-				line-height: 43px
-				letter-spacing: 0.38em
-				padding-left: 62px
+      h2
+        width: 820px
+        text-transform: uppercase
+        text-align: center
+        font-size: 56px
+        font-family: Roboto
+        font-weight: 300
+        line-height: 43px
+        letter-spacing: 0.38em
+        padding-left: 62px
 
+      h3
+        width: 380px
+        font-family: robotoBold
+        text-transform: uppercase
+        font-size: 30px
+        letter-spacing: 0.38em
+        padding-left: 21px
+        line-height: 46px
 
-			h3
-				width: 380px
-				font-family: robotoBold
-				text-transform: uppercase
-				font-size: 30px
-				letter-spacing: 0.38em
-				padding-left: 21px
-				line-height: 46px
+    &__flex-container
+      display: flex
+      justify-content: space-between
+      &__left-side
+        width: 380px
 
-		&__flex-container
-			display: flex
-			justify-content: space-between
-			&__left-side
-				width: 380px
+        &__list
+          ul
+            list-style-type: none
+            padding-left: 0
+            text-align: center
+            font-family: "Playfair Display"
+            font-style: normal
+            font-weight: bold
 
-				&__list
-					ul
-						list-style-type: none
-						padding-left: 0
-						text-align: center
-						font-family: "Playfair Display"
-						font-style: normal
-						font-weight: bold
+            li
+              height: 58px
+              background-color: #f6f4f0
+              color: #282828
+              font-size: 16px
+              display: flex
+              justify-content: center
+              align-items: center
+              cursor: pointer
+              text-decoration: underline
+              transition: 0.2s
 
+              &:nth-child(n+2)
+                margin-top: 2px
 
-						li
-							height: 58px
-							background-color: #f6f4f0
-							color: #282828
-							font-size: 16px
-							display: flex
-							justify-content: center
-							align-items: center
-							cursor: pointer
-							text-decoration: underline
-							transition: 0.2s
+              &:hover
+                background-color: #6a5abc
+                color: white
+                text-decoration: none
 
-							&:nth-child(n+2)
-								margin-top: 2px
+        &__proposal
+          margin-top: 42px
 
-							&:hover
-								background-color: #6a5abc
-								color: white
-								text-decoration: none
+          &__bottom
+            height: 440px
+            background-color: #f6f4f0
+            padding: 40px
 
-				&__proposal
-					margin-top: 42px
+            h4
+              font-family: robotoRegular
+              font-size: 18px
+              text-transform: uppercase
+              letter-spacing: 0.34em
+              font-weight: 300
+              line-height: 14px
+              color: #282828
 
-					&__bottom
-						height: 440px
-						background-color: #f6f4f0
-						padding: 40px
+            h5
+              font-family: "Playfair Display"
+              font-style: normal
+              font-weight: 900
+              color: #442a68
+              font-size: 36px
+              line-height: 55px
 
-						h4
-							font-family: robotoRegular
-							font-size: 18px
-							text-transform: uppercase
-							letter-spacing: 0.34em
-							font-weight: 300
-							line-height: 14px
-							color: #282828
+            hr
+              display: block
+              height: 1px
+              border: 0
+              border-top: 2px solid #fff
+              margin: 1.2em 0
+              padding: 0
 
-						h5
-							font-family: "Playfair Display"
-							font-style: normal
-							font-weight: 900
-							color: #442a68
-							font-size: 36px
-							line-height: 55px
+            .price
+              font-family: robotoBold
+              font-size: 33px
+              color: #282828
+              font-weight: 900
+              line-height: 51px
+              letter-spacing: 0.11em
+              margin-bottom: 0
 
-						hr
-							display: block
-							height: 1px
-							border: 0
-							border-top: 2px solid #fff
-							margin: 1.2em 0
-							padding: 0
+            .sale
+              font-family: "Roboto Light"
+              font-size: 24px
+              color: #d6d0c4
+              margin-bottom: 10px
+              margin-top: -9px
+              letter-spacing: 1px
 
-						.price
-							font-family: robotoBold
-							font-size: 33px
-							color: #282828
-							font-weight: 900
-							line-height: 51px
-							letter-spacing: 0.11em
-							margin-bottom: 0
+            .about
+              font-family: "Playfair Display"
+              font-style: italic
+              font-size: 18px
+              line-height: 37px
+              color: #442a68
+              text-decoration: underline
+              cursor: pointer
 
-						.sale
-							font-family: "Roboto Light"
-							font-size: 24px
-							color: #d6d0c4
-							margin-bottom: 10px
-							margin-top: -9px
-							letter-spacing: 1px
+            button
+              width: 300px
+              height: 100px
+              background-color: transparent
+              border: solid 6px #442a68
+              font-size: 24px
+              font-family: Roboto
+              font-weight: normal
+              color: #442a68
+              text-decoration: underline
+              letter-spacing: 3.3px
+              text-transform: uppercase
+              padding-left: 9px
+              padding-bottom: 2px
+              cursor: pointer
+              transition: 0.33s
 
-						.about
-							font-family: "Playfair Display"
-							font-style: italic
-							font-size: 18px
-							line-height: 37px
-							color: #442a68
-							text-decoration: underline
-							cursor: pointer
+              &:hover
+                background-color: #442a68
+                color: white
+                text-decoration: none
+                transition: 0.33s
 
-						button
-							width: 300px
-							height: 100px
-							background-color: transparent
-							border: solid 6px #442a68
-							font-size: 24px
-							font-family: Roboto
-							font-weight: normal
-							color: #442a68
-							text-decoration: underline
-							letter-spacing: 3.3px
-							text-transform: uppercase
-							padding-left: 9px
-							padding-bottom: 2px
-							cursor: pointer
-							transition: 0.33s
+      &__right-side
+        width: 780px
 
-							&:hover
-								background-color: #442a68
-								color: white
-								text-decoration: none
-								transition: 0.33s
+        &__card
+          margin-top: 40px
+          height: 480px
+          display: flex
 
-			&__right-side
-				width: 780px
+          &__info
+            width: 100%
+            height: 100%
+            background-color: #f6f4f0
+            @extend .catalog__content__flex-container__left-side__proposal__bottom
+            padding: 40px 0 40px 40px
 
-				&__card
-					margin-top: 40px
-					height: 480px
-					display: flex
+            h5
+              font-size: 60px
+              margin-top: 22px
 
-					&__info
-						width: 100%
-						height: 100%
-						background-color: #f6f4f0
-						@extend .catalog__content__flex-container__left-side__proposal__bottom
-						padding: 40px 0 40px 40px
+            hr
+              width: 320px
+              margin-top: 43px
 
-						h5
-							font-size: 60px
-							margin-top: 22px
-
-						hr
-							width: 320px
-							margin-top: 43px
-
-		&__more
-			text-align: center
-			font-family: Roboto
-			font-size: 24px
-			text-transform: uppercase
-			text-decoration: underline
-			margin-top: 50px
-			letter-spacing: 0.15em
-			color: #282828
-			cursor: pointer
+    &__more
+      text-align: center
+      font-family: Roboto
+      font-size: 24px
+      text-transform: uppercase
+      text-decoration: underline
+      margin-top: 50px
+      letter-spacing: 0.15em
+      color: #282828
+      cursor: pointer
 
 .accessories
-	position: relative
-	min-height: 780px
-	background-image: url("../img/secondBg.png")
+  position: relative
+  min-height: 780px
+  background: url("../img/secondBg.png") no-repeat center center
+  background-size: cover
 
-	img
-		position: absolute
-		right: 0
-		left: 16px
-		margin: 0 auto
-		top: -160px
+  img
+    position: absolute
+    right: 0
+    left: 16px
+    margin: 0 auto
+    top: -160px
 
-	&__content
-		font-family: "Playfair Display"
-		padding-top: 250px
-		h2
-			color: white
-			font-weight: normal
-			font-size: 109px
-			padding-left: 16px
-			margin-bottom: 24px
-			line-height: 21px
-			font-weight: 400
+  &__content
+    font-family: "Playfair Display"
+    padding-top: 250px
+    h2
+      color: white
+      font-weight: normal
+      font-size: 109px
+      padding-left: 16px
+      margin-bottom: 24px
+      line-height: 21px
+      font-weight: 400
 
-		h3
-			color: white
-			font-weight: bold
-			font-size: 82px
-			font-style: italic
-			letter-spacing: 1px
-			padding-left: 18px
-			margin-bottom: 12px
+    h3
+      color: white
+      font-weight: bold
+      font-size: 82px
+      font-style: italic
+      letter-spacing: 1px
+      padding-left: 18px
+      margin-bottom: 12px
 
-		button
-			width: 480px
-			height: 100px
-			background-color: transparent
-			border: solid 6px #f6dcb2
-			font-size: 24px
-			font-family: Roboto
-			font-weight: normal
-			color: white
-			letter-spacing: 3.3px
-			margin-top: 38px
-			margin-left: 16px
-			text-transform: uppercase
-			padding-left: 9px
-			padding-bottom: 2px
-			cursor: pointer
+    button
+      width: 480px
+      height: 100px
+      background-color: transparent
+      border: solid 6px #f6dcb2
+      font-size: 24px
+      font-family: Roboto
+      font-weight: normal
+      color: white
+      letter-spacing: 3.3px
+      margin-top: 38px
+      margin-left: 16px
+      text-transform: uppercase
+      padding-left: 9px
+      padding-bottom: 2px
+      cursor: pointer
+      transition: 0.33s
 
+      &:hover
+        color: white
+        background-color: #f6dcb2
 
 .advantages
-	padding-left: 16px
-	&__content
-		min-height: 1340px
-		padding-top: 96px
+  padding-left: 16px
+  background: url("../img/advantagesBg.png") center center no-repeat
+  background-size: cover
+  &__content
+    min-height: 1340px
+    padding-top: 96px
 
-		&__top-sales
-			margin-top: 118px
+    &__top-sales
+      margin-top: 118px
 
-		h2
-			font-family: Roboto
-			font-weight: 300
-			font-size: 56px
-			letter-spacing: 0.38em
-			text-transform: uppercase
-			padding-left: 20px
+    h2
+      font-family: Roboto
+      font-weight: 300
+      font-size: 56px
+      letter-spacing: 0.38em
+      text-transform: uppercase
+      padding-left: 20px
 
-		&__plus
-			display: flex
-			margin-top: 79px
-			padding: 0 40px
-			justify-content: space-between
+    &__plus
+      display: flex
+      margin-top: 79px
+      padding: 0 40px
+      justify-content: space-between
 
-			&__card
-				width: 220px
-				display: flex
-				justify-content: center
-				flex-direction: column
-				align-items: center
-				img
-					width: 64px
-					height: 46px
+      &__card
+        width: 220px
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        img
+          width: 64px
+          height: 46px
+
+        p
+          text-align: center
+          font-size: 18px
+          font-family: "Playfair Display"
+          font-style: normal
+          font-weight: normal
+          line-height: 24px
+          margin-top: 22px
+    &__prices
+      margin-top: 73px
+      padding: 0
+      display: flex
+      &__view
+        width: 260px
+        margin-left: 20px
+
+        &:hover
+          .advantages__content__prices__view__bottom
+            background-color: #442a68
+            h3, p
+              color: white
+
+            button
+              background-color: #442a68
+              border: solid 4px #f6dcb2
+
+        &:nth-child(n+2)
+          margin-left: 40px
+
+        &__bottom
+          padding-bottom: 50px
+          h3
+            font-family: "Playfair Display"
+            font-weight: bold
+            font-size: 24px
+            color: #6a5abc
+            padding-top: 24px
+
+          p
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 24px
+            line-height: 31px
+            color: #282828
+
+          button
+            width: 140px
+            height: 60px
+            background-color: #6a5abc
+            border: none
+            color: white
+            font-family: robotoRegular
+            font-size: 22px
+            margin-top: 10px
+            font-weight: 300
+            padding-bottom: 6px
+            transition: 0.2s
+            cursor: pointer
 
 
-				p
-					text-align: center
-					font-size: 18px
-					font-family: "Playfair Display"
-					font-style: normal
-					font-weight: normal
-					line-height: 24px
-					margin-top: 22px
-		&__prices
-			margin-top: 73px
-			padding: 0
-			display: flex
-			&__view
-				width: 260px
-				margin-left: 20px
-
-				&:hover
-					.advantages__content__prices__view__bottom
-						background-color: #442a68
-						h3, p
-							color: white
-
-
-				&:nth-child(n+2)
-					margin-left: 40px
-
-				&__bottom
-					padding-bottom:	50px
-					h3
-						font-family: "Playfair Display"
-						font-weight: bold
-						font-size: 24px
-						color: #6a5abc
-						padding-top: 24px
-
-					p
-						font-family: Roboto
-						font-style: normal
-						font-weight: normal
-						font-size: 24px
-						line-height: 31px
-						color: #282828
-
-					button
-						width: 140px
-						height: 60px
-						background-color: #6a5abc
-						border: none
-						color: white
-						font-family: robotoRegular
-						font-size: 22px
-						margin-top: 10px
-						font-weight: 300
-						padding-bottom: 6px
-						transition: 0.2s
-						cursor: pointer
-
-						&:hover
-							border: solid 4px #f6dcb2
 
 .footer
-	background-image: url("../img/footerBg.png")
-	padding-left: 16px
-	&__content
-		padding-top: 84px
-		height: 360px
-		color: white
-		display: flex
-		justify-content: space-between
+  background: url("../img/footerBg.png") no-repeat center center
+  background-size: cover
+  padding-left: 16px
+  &__content
+    padding-top: 84px
+    height: 360px
+    color: white
+    display: flex
+    justify-content: space-between
 
-		&__left-side
-			padding-top: 24px
+    &__left-side
+      padding-top: 24px
 
-		&__about-us
-			margin-right: 25px
-			ul
-				list-style-type: none
-				font-family: "Playfair Display"
-				li
-					font-size: 18px
-					line-height: 48px
-					cursor: pointer
+    &__about-us
+      margin-right: 25px
+      ul
+        list-style-type: none
+        font-family: "Playfair Display"
+        li
+          font-size: 18px
+          line-height: 48px
+          cursor: pointer
 
-					&:hover
-						color: #f6dcb2
+          &:hover
+            color: #f6dcb2
 
+    &__geo
+      padding-right: 102px
+      padding-top: 5px
+      font-family: "Playfair Display"
 
-		&__geo
-			padding-right: 102px
-			padding-top: 5px
-			font-family: "Playfair Display"
+      h3
+        font-size: 18px
+        line-height: 36px
+        padding-left: 3px
+        padding-right: 5px
 
-			h3
-				font-size: 18px
-				line-height: 36px
-				padding-left: 3px
-				padding-right: 5px
+      p:first-child
+        font-size: 16px
+        line-height: 24px
+        padding-top: 9px
+        padding-left: 5px
 
-			p:first-child
-				font-size: 16px
-				line-height: 24px
-				padding-top: 9px
-				padding-left: 5px
+      p:last-child
+        font-family: robotoRegular
+        font-size: 24px
+        line-height: 46px
 
-			p:last-child
-				font-family: robotoRegular
-				font-size: 24px
-				line-height: 46px
+        span
+          font-family: robotoBold
+          font-size: 36px
 
-				span
-					font-family: robotoBold
-					font-size: 36px
+    &__right-side
+      padding-top: 16px
 
-		&__right-side
-			padding-top: 16px
-
-@import "media" // Always at the end
+@import "media"
+// Always at the end

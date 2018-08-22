@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab2711c8-5545-44f5-a083-037413cbbc8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -45,7 +45,7 @@
         <counts>
           <entry key="css" value="7" />
           <entry key="html" value="2040" />
-          <entry key="sass" value="3452" />
+          <entry key="sass" value="3608" />
           <entry key="svg" value="5" />
         </counts>
       </usages-collector>
@@ -54,7 +54,7 @@
           <entry key="CSS" value="7" />
           <entry key="HTML" value="2040" />
           <entry key="SVG" value="5" />
-          <entry key="Sass" value="3452" />
+          <entry key="Sass" value="3608" />
         </counts>
       </usages-collector>
     </session>
@@ -79,8 +79,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="538" column="28" selection-start-line="538" selection-start-column="28" selection-end-line="538" selection-end-column="28" />
+                <state relative-caret-position="275">
+                  <caret line="477" column="39" selection-start-line="477" selection-start-column="39" selection-end-line="477" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -126,6 +126,9 @@
       <find>roboto</find>
       <find>Robot</find>
       <find>button</find>
+      <find>bac</find>
+      <find>ima</find>
+      <find>adva</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -263,18 +266,18 @@
       <option name="presentableId" value="Default" />
       <updated>1534852938922</updated>
       <workItem from="1534852941399" duration="7168000" />
-      <workItem from="1534919394935" duration="24841000" />
+      <workItem from="1534919394935" duration="26276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32009000" />
+    <option name="totallyTimeSpent" value="33444000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17175975" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17175975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -289,7 +292,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.070562296" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3748622" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -352,8 +355,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="538" column="28" selection-start-line="538" selection-start-column="28" selection-end-line="538" selection-end-column="28" />
+        <state relative-caret-position="275">
+          <caret line="477" column="39" selection-start-line="477" selection-start-column="39" selection-end-line="477" selection-end-column="39" />
         </state>
       </provider>
     </entry>
