@@ -169,7 +169,7 @@ b, strong
 .catalog
 	padding-left: 16px
 	&__content
-		min-height: 2023px
+		min-height: 2004px
 		padding-top: 120px
 
 		&__header
@@ -348,5 +348,130 @@ b, strong
 			letter-spacing: 0.15em
 			color: #282828
 			cursor: pointer
+
+.accessories
+	position: relative
+	min-height: 780px
+	background-image: url("../img/secondBg.png")
+
+	img
+		position: absolute
+		right: 0
+		left: 16px
+		margin: 0 auto
+		top: -160px
+
+	&__content
+		font-family: "Playfair Display"
+		padding-top: 250px
+		h2
+			color: white
+			font-weight: normal
+			font-size: 109px
+			padding-left: 16px
+			margin-bottom: 24px
+			line-height: 21px
+			font-weight: 400
+
+		h3
+			color: white
+			font-weight: bold
+			font-size: 82px
+			font-style: italic
+			letter-spacing: 1px
+			padding-left: 18px
+			margin-bottom: 12px
+
+		button
+			width: 480px
+			height: 100px
+			background-color: transparent
+			border: solid 6px #f6dcb2
+			font-size: 24px
+			font-family: Roboto
+			font-weight: normal
+			color: white
+			letter-spacing: 3.3px
+			margin-top: 38px
+			margin-left: 16px
+			text-transform: uppercase
+			padding-left: 9px
+			padding-bottom: 2px
+			cursor: pointer
+
+
+.advantages
+	padding-left: 16px
+	&__content
+		min-height: 1340px
+		padding-top: 96px
+
+		&__top-sales
+			margin-top: 118px
+
+		h2
+			font-family: Roboto
+			font-weight: 300
+			font-size: 56px
+			letter-spacing: 0.38em
+			text-transform: uppercase
+			padding-left: 20px
+
+		&__plus
+			display: flex
+			margin-top: 79px
+			padding: 0 40px
+			justify-content: space-between
+
+			&__card
+				width: 220px
+				display: flex
+				justify-content: center
+				flex-direction: column
+				align-items: center
+				img
+					width: 64px
+					height: 46px
+
+
+				p
+					text-align: center
+					font-size: 18px
+					font-family: "Playfair Display"
+					font-style: normal
+					font-weight: normal
+					line-height: 24px
+					margin-top: 22px
+		&__prices
+			margin-top: 73px
+			padding: 0 20px
+			&__view
+				width: 260px
+				&__bottom
+					h3
+						font-family: "Playfair Display"
+						font-weight: bold
+						font-size: 24px
+						color: #6a5abc
+						margin-top: 24px
+
+					p
+						font-family: Roboto
+						font-style: normal
+						font-weight: normal
+						font-size: 24px
+						line-height: 31px
+
+					button
+						width: 140px
+						height: 60px
+						background-color: #6a5abc
+						border: none
+						color: white
+						font-family: robotoRegular
+						font-size: 22px
+						margin-top: 10px
+						font-weight: 300
+						padding-bottom: 6px
 
 @import "media" // Always at the end
