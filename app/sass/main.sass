@@ -87,7 +87,7 @@ b, strong
 			content: '2'
 			position: absolute
 			top: 1px
-			left: 158px
+			left: 150px
 			font-family: robotoBold
 			background-color: #6a5abc
 			border-radius: 40px
@@ -119,21 +119,36 @@ b, strong
 		color: white
 		font-family: "Playfair Display"
 		display: flex
-		align-items: center
+		//align-items: center
+
+		div
+			margin-top: 213px
 
 		h1
-			font-size: 105px
 			font-weight: normal
+			font-size: 109px
+			padding-left: 16px
+			margin-bottom: 24px
+			font-weight: 400
+			line-height: 16px
 
 		h2
 			font-weight: bold
-			font-size: 87px
+			font-size: 82px
 			font-style: italic
+			letter-spacing: 1px
+			padding-left: 18px
+			margin-bottom: 12px
 
 		h3
-			font-family: Roboto
-			font-size: 48px
-			font-weight: normal
+			font-family: robotoRegular
+			text-transform: uppercase
+			font-size: 43px
+			font-weight: 300
+			padding-left: 30px
+			letter-spacing: 19.5px
+			margin-bottom: 11px
+			line-height: 77px
 
 		button
 			width: 400px
@@ -144,5 +159,194 @@ b, strong
 			font-family: Roboto
 			font-weight: normal
 			color: white
+			letter-spacing: 3.3px
+			margin-top: 32px
+			margin-left: 16px
+			text-transform: uppercase
+			padding-left: 9px
+			padding-bottom: 2px
+
+.catalog
+	padding-left: 16px
+	&__content
+		min-height: 2023px
+		padding-top: 120px
+
+		&__header
+			height: 80px
+			display: flex
+
+			h2
+				width: 820px
+				text-transform: uppercase
+				text-align: center
+				font-size: 56px
+				font-family: Roboto
+				font-weight: 300
+				line-height: 43px
+				letter-spacing: 0.38em
+				padding-left: 62px
+
+
+			h3
+				width: 380px
+				font-family: robotoBold
+				text-transform: uppercase
+				font-size: 30px
+				letter-spacing: 0.38em
+				padding-left: 21px
+				line-height: 46px
+
+		&__flex-container
+			display: flex
+			justify-content: space-between
+			&__left-side
+				width: 380px
+
+				&__list
+					ul
+						list-style-type: none
+						padding-left: 0
+						text-align: center
+						font-family: "Playfair Display"
+						font-style: normal
+						font-weight: bold
+
+
+						li
+							height: 58px
+							background-color: #f6f4f0
+							color: #282828
+							font-size: 16px
+							display: flex
+							justify-content: center
+							align-items: center
+							cursor: pointer
+							text-decoration: underline
+							transition: 0.2s
+
+							&:nth-child(n+2)
+								margin-top: 2px
+
+							&:hover
+								background-color: #6a5abc
+								color: white
+								text-decoration: none
+
+				&__proposal
+					margin-top: 42px
+
+					&__bottom
+						height: 440px
+						background-color: #f6f4f0
+						padding: 40px
+
+						h4
+							font-family: robotoRegular
+							font-size: 18px
+							text-transform: uppercase
+							letter-spacing: 0.34em
+							font-weight: 300
+							line-height: 14px
+							color: #282828
+
+						h5
+							font-family: "Playfair Display"
+							font-style: normal
+							font-weight: 900
+							color: #442a68
+							font-size: 36px
+							line-height: 55px
+
+						hr
+							display: block
+							height: 1px
+							border: 0
+							border-top: 2px solid #fff
+							margin: 1.2em 0
+							padding: 0
+
+						.price
+							font-family: robotoBold
+							font-size: 33px
+							color: #282828
+							font-weight: 900
+							line-height: 51px
+							letter-spacing: 0.11em
+							margin-bottom: 0
+
+						.sale
+							font-family: "Roboto Light"
+							font-size: 24px
+							color: #d6d0c4
+							margin-bottom: 10px
+							margin-top: -9px
+							letter-spacing: 1px
+
+						.about
+							font-family: "Playfair Display"
+							font-style: italic
+							font-size: 18px
+							line-height: 37px
+							color: #442a68
+							text-decoration: underline
+							cursor: pointer
+
+						button
+							width: 300px
+							height: 100px
+							background-color: transparent
+							border: solid 6px #442a68
+							font-size: 24px
+							font-family: Roboto
+							font-weight: normal
+							color: #442a68
+							text-decoration: underline
+							letter-spacing: 3.3px
+							text-transform: uppercase
+							padding-left: 9px
+							padding-bottom: 2px
+							cursor: pointer
+							transition: 0.33s
+
+							&:hover
+								background-color: #442a68
+								color: white
+								text-decoration: none
+								transition: 0.33s
+
+			&__right-side
+				width: 780px
+
+				&__card
+					margin-top: 40px
+					height: 480px
+					display: flex
+
+					&__info
+						width: 100%
+						height: 100%
+						background-color: #f6f4f0
+						@extend .catalog__content__flex-container__left-side__proposal__bottom
+						padding: 40px 0 40px 40px
+
+						h5
+							font-size: 60px
+							margin-top: 22px
+
+						hr
+							width: 320px
+							margin-top: 43px
+
+		&__more
+			text-align: center
+			font-family: Roboto
+			font-size: 24px
+			text-transform: uppercase
+			text-decoration: underline
+			margin-top: 50px
+			letter-spacing: 0.15em
+			color: #282828
+			cursor: pointer
 
 @import "media" // Always at the end
