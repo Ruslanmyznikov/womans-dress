@@ -114,12 +114,19 @@ b, strong
 				color: black
 
 	&__content
+		position: relative
 		background-image: url('../img/heroBg.png')
 		min-height: 800px
 		color: white
 		font-family: "Playfair Display"
 		display: flex
-		//align-items: center
+
+		img
+			position: absolute
+			right: 0
+			left: 19px
+			top: -20px
+			margin: 0 auto
 
 		div
 			margin-top: 213px
@@ -165,6 +172,12 @@ b, strong
 			text-transform: uppercase
 			padding-left: 9px
 			padding-bottom: 2px
+			transition: 0.33s
+			cursor: pointer
+
+			&:hover
+				color: white
+				background-color: #f6dcb2
 
 .catalog
 	padding-left: 16px
@@ -444,16 +457,30 @@ b, strong
 					margin-top: 22px
 		&__prices
 			margin-top: 73px
-			padding: 0 20px
+			padding: 0
+			display: flex
 			&__view
 				width: 260px
+				margin-left: 20px
+
+				&:hover
+					.advantages__content__prices__view__bottom
+						background-color: #442a68
+						h3, p
+							color: white
+
+
+				&:nth-child(n+2)
+					margin-left: 40px
+
 				&__bottom
+					padding-bottom:	50px
 					h3
 						font-family: "Playfair Display"
 						font-weight: bold
 						font-size: 24px
 						color: #6a5abc
-						margin-top: 24px
+						padding-top: 24px
 
 					p
 						font-family: Roboto
@@ -461,6 +488,7 @@ b, strong
 						font-weight: normal
 						font-size: 24px
 						line-height: 31px
+						color: #282828
 
 					button
 						width: 140px
@@ -473,5 +501,66 @@ b, strong
 						margin-top: 10px
 						font-weight: 300
 						padding-bottom: 6px
+						transition: 0.2s
+						cursor: pointer
+
+						&:hover
+							border: solid 4px #f6dcb2
+
+.footer
+	background-image: url("../img/footerBg.png")
+	padding-left: 16px
+	&__content
+		padding-top: 84px
+		height: 360px
+		color: white
+		display: flex
+		justify-content: space-between
+
+		&__left-side
+			padding-top: 24px
+
+		&__about-us
+			margin-right: 25px
+			ul
+				list-style-type: none
+				font-family: "Playfair Display"
+				li
+					font-size: 18px
+					line-height: 48px
+					cursor: pointer
+
+					&:hover
+						color: #f6dcb2
+
+
+		&__geo
+			padding-right: 102px
+			padding-top: 5px
+			font-family: "Playfair Display"
+
+			h3
+				font-size: 18px
+				line-height: 36px
+				padding-left: 3px
+				padding-right: 5px
+
+			p:first-child
+				font-size: 16px
+				line-height: 24px
+				padding-top: 9px
+				padding-left: 5px
+
+			p:last-child
+				font-family: robotoRegular
+				font-size: 24px
+				line-height: 46px
+
+				span
+					font-family: robotoBold
+					font-size: 36px
+
+		&__right-side
+			padding-top: 16px
 
 @import "media" // Always at the end
