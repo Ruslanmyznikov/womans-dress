@@ -40,19 +40,25 @@
         </div>
         <div class="hero__bin col-4">
             <div class="hero__bin__icon">
-                <img  src="img/cart.png">
+                <img src="img/cart.png">
             </div>
             <!--<span class="hero__bin__digits">2</span>-->
             <a href="#" class="hero__bin__link">Перейти в корзину</a>
         </div>
     </nav>
     <div class="hero__content container-fluid">
+        <div class="hero__nav-mobile">
+            <img src="img/logo.png">
+            <div class="burger-container">
+                <div class="burger burger2" id="burger2"></div>
+            </div>
+        </div>
         <img src="img/bird1.png">
         <div class="container text-center">
             <h1 class="text-center">Свадебные платья</h1>
             <h2 class="text-center">со скидками до 60%</h2>
             <h3 class="text-center">новая коллекция 2017</h3>
-            <button >Выбрать платье</button>
+            <button>Выбрать платье</button>
         </div>
     </div>
 </header>
@@ -101,7 +107,9 @@
                         <p class="price">70 000 руб.</p>
                         <p class="sale"><s>90 000</s></p>
                         <p class="about">подробнее</p>
-                        <button>Купить</button>
+                        <div>
+                            <button>Купить</button>
+                        </div>
                     </div>
                 </div>
                 <div class="catalog__content__flex-container__right-side__card">
@@ -113,7 +121,9 @@
                         <p class="price">70 000 руб.</p>
                         <p class="sale"><s>120 000</s></p>
                         <p class="about">подробнее</p>
-                        <button>Купить</button>
+                        <div>
+                            <button>Купить</button>
+                        </div>
                     </div>
                 </div>
                 <div class="catalog__content__flex-container__right-side__card">
@@ -125,20 +135,41 @@
                         <p class="price">70 000 руб.</p>
                         <p class="sale"><s>90 000</s></p>
                         <p class="about">подробнее</p>
-                        <button>Купить</button>
+                        <div>
+                            <button>Купить</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <p class="catalog__content__more">больше товаров</p>
+        <div class="catalog__content__mobile-btn">
+            <button data-for="message1" class="popup-button">Открыть каталог</button>
+        </div>
+        <div class="popupMessage" id="message1">
+            <div class="catalog__content__flex-container__left-side__list">
+                <ul>
+                    <li>Аксессуары</li>
+                    <li>Кольца</li>
+                    <li>Вечерние платья</li>
+                    <li>Костюмы</li>
+                    <li>Украшения и декор</li>
+                    <li>Все для банкета</li>
+                    <li>Цветы</li>
+                    <li>Все для венчания</li>
+                    <li>Все для развода</li>
+                    <li>Торты</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 <section class="accessories container-fluid">
     <img src="img/bird2.png">
     <div class="accessories__content container text-center">
-            <h2 class="text-center">Большой выбор</h2>
-            <h3 class="text-center">свадебных аксессуаров</h3>
-            <button >Перейти в каталог</button>
+        <h2 class="text-center">Большой выбор</h2>
+        <h3 class="text-center">свадебных аксессуаров</h3>
+        <button>Перейти в каталог</button>
     </div>
 </section>
 <section class="advantages container-fluid">
@@ -146,19 +177,19 @@
         <h2 class="text-center">Преимущества</h2>
         <div class="advantages__content__plus">
             <div class="advantages__content__plus__card">
-                <img src="img/check.svg" >
+                <img src="img/check.svg">
                 <p>Огромный каталог свадебных аксессуаров</p>
             </div>
             <div class="advantages__content__plus__card">
-                <img src="img/check.svg" >
+                <img src="img/check.svg">
                 <p>Лучшие цены на весь ассортимент товаров</p>
             </div>
             <div class="advantages__content__plus__card">
-                <img src="img/check.svg" >
+                <img src="img/check.svg">
                 <p>Огромный каталог свадебных аксессуаров</p>
             </div>
             <div class="advantages__content__plus__card">
-                <img src="img/check.svg" >
+                <img src="img/check.svg">
                 <p>Огромный каталог свадебных аксессуаров</p>
             </div>
         </div>

@@ -5,10 +5,32 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
-  .hero__content
+  .hero
+    img
+      display: none
 
+    .container
+
+    &__nav-mobile
+      display: flex
+      height: 60px
+      width: 100%
+      margin-top: 0!important
+      background-color: transparent
+      align-items: center
+      justify-content: space-between
+      div
+        margin-top: 0
+      img
+        display: block!important
+        position: static
+        margin-left: 30px
+  .hero__content
+    flex-direction: column
+    margin-top: 0
     h1
       font-size: 86px
+      margin-top: 80px
 
     h2
       font-size: 67px
@@ -35,9 +57,40 @@
   .hero
     nav
       display: none
+  .accessories
+    h2,h3
+      padding-left: 0
 
+    button
+      margin-left: 0
   .catalog
     background: none
+    &__content
+      padding-bottom: 190px
+      &__mobile-btn
+        display: block
+        text-align: center
+        button
+          width: 280px
+          height: 90px
+          background-color: transparent
+          border: solid 6px #442a68
+          font-size: 18px
+          font-family: Roboto
+          font-weight: normal
+          color: #442a68
+          letter-spacing: 3.3px
+          text-transform: uppercase
+          padding-left: 9px
+          padding-bottom: 2px
+          cursor: pointer
+          transition: 0.33s
+
+          &:hover
+            background-color: #442a68
+            color: white
+            text-decoration: none
+            transition: 0.33s
     h3
       display: none
 
@@ -99,6 +152,8 @@
 // ≥768px
 +media-breakpoint-down(sm)
   .hero__content
+    img
+      left: 0
     h1
       font-size: 53px
 
@@ -120,6 +175,18 @@
     h2
       font-size: 34px
 
+  .catalog__content__header
+    padding-left: 20px
+  .catalog__content__flex-container__right-side
+    justify-content: center
+    &__card
+      height: auto
+      display: flex
+      width: 400px
+      flex-direction: column
+      align-items: center
+      &__info
+        padding-left: 50px
   .footer
     &__content
       padding-top: 40px
@@ -144,10 +211,12 @@
 // ≥576px
 +media-breakpoint-down(xs)
   .hero__content
-    min-height: 550px
+    min-height: 95vh
+    display: flex
+    align-items: center
 
     div
-      margin-top: 90px
+      margin-top: 0
     h1
       font-size: 31px
       padding-left: 0
@@ -194,7 +263,41 @@
 
   .advantages
     h2
-      font-size: 24px
+      font-size: 22px
+
+  .catalog
+    h2
+      letter-spacing: 3px
+
+    &__content
+      padding-top: 30px
+
+
+      &__flex-container
+        &__right-side
+          &__card
+            width: 95%
+            margin: 20px auto
+            img
+              width: 100%
+
+            &__info
+              padding-left: 10px
+              padding-right: 10px
+
+              &>div
+                text-align: center
+
+            hr
+              width: 95%
+
+            h5
+              font-size: 53px
+
+            button
+              width: 280px
+              height: 90px
+
   .footer
     &__content
 
