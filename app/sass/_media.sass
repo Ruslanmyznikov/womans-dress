@@ -5,15 +5,212 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .hero__content
+
+    h1
+      font-size: 86px
+
+    h2
+      font-size: 67px
+
+    h3
+      font-size: 30px
+
+  .advantages__content__prices
+   justify-content: center
+   flex-wrap: wrap
+   &__view
+     flex-basis: 45%
+     margin-left: 0
+     &:first-child
+       //margin-left: 40px
+     &:nth-child(n+3)
+      margin: 20px 0 20px 0
+
+     &:nth-child(2)
+       margin-left: 0
+
+  .hero__navigation, .hero__logo, .hero__bin
+    display: none
+  .hero
+    nav
+      display: none
+
+  .catalog
+    background: none
+    h3
+      display: none
+
+    h2
+      padding-left: 0
+      margin: auto
+
+    .catalog__content__flex-container
+      justify-content: center
+      &__left-side
+        display: none
 
 // ≥992px
 +media-breakpoint-down(md)
 
+  .hero__content
+
+    h1
+      font-size: 61px
+
+    h2
+      font-size: 53px
+
+    h3
+      font-size: 16px
+      letter-spacing: 6.5px
+
+  .advantages__content__prices__view
+    flex-basis: 30%
+    margin: 0 25px 40px!important
+
+
+  .accessories
+    display: flex
+    align-items: center
+    min-height: 605px
+
+    img
+      height: 365px
+    &__content
+      padding-top: 0
+    h2
+      font-size: 79px
+      line-height: 120px
+
+    h3
+      font-size: 50px
+
+  .footer
+    &__content
+      &__geo
+        padding-right: 0
+
+        p:last-child
+          font-size: 18px
+          span
+            font-size: 24px
+
 // ≥768px
 +media-breakpoint-down(sm)
+  .hero__content
+    h1
+      font-size: 53px
+
+    h2
+      font-size: 41px
+
+
+  .accessories
+    img
+      height: 365px
+    h2
+      font-size: 55px
+      line-height: 90px
+
+    h3
+      font-size: 33px
+
+  .advantages
+    h2
+      font-size: 34px
+
+  .footer
+    &__content
+      padding-top: 40px
+      flex-wrap: wrap
+      &__left-side
+        flex-basis: 100%
+        text-align: center
+        margin-bottom: 35px
+      &__about-us
+        flex-basis: 50%
+        margin-right: 0
+        ul
+          padding-left: 0
+          text-align: center
+      &__geo
+        flex-basis: 50%
+        text-align: center
+      &__right-side
+        flex-basis: 100%
+        text-align: center
 
 // ≥576px
 +media-breakpoint-down(xs)
+  .hero__content
+    min-height: 550px
+
+    div
+      margin-top: 90px
+    h1
+      font-size: 31px
+      padding-left: 0
+      line-height: 61px
+    h2
+      font-size: 24px
+      padding-left: 0
+
+    h3
+      font-size: 16px
+      padding-left: 0
+      letter-spacing: 1.5px
+
+    img
+      display: none
+
+    button
+      width: 290px
+      height: 90px
+      margin-left: 0
+      font-size: 19px
+
+  .accessories
+    display: flex
+    align-items: center
+    min-height: 605px
+
+    &__content
+      padding-top: 0
+
+    img
+      display: none
+
+    h2
+      font-size: 55px
+      line-height: 90px
+
+    h3
+      font-size: 33px
+
+    button
+      width: 290px
+      font-size: 18px
+
+  .advantages
+    h2
+      font-size: 24px
+  .footer
+    &__content
+
+      &__left-side
+        flex-basis: 100%
+
+      &__about-us
+          flex-basis: 100%
+
+      &__geo
+        flex-basis: 100%
+        margin-top: 40px
+
+      &__right-side
+        flex-basis: 100%
+        margin-bottom: 20px
 
 
 /*==========  Mobile First  ==========*/

@@ -181,7 +181,7 @@ b, strong
 
 .catalog
   background: url("../img/flower.png") no-repeat 17.8% 5%
-  padding-left: 16px
+  //padding-left: 16px
   &__content
     min-height: 2004px
     padding-top: 120px
@@ -418,7 +418,7 @@ b, strong
         background-color: #f6dcb2
 
 .advantages
-  padding-left: 16px
+  //padding-left: 16px
   background: url("../img/advantagesBg.png") center center no-repeat
   background-size: cover
   &__content
@@ -438,9 +438,10 @@ b, strong
 
     &__plus
       display: flex
+      flex-wrap: wrap
+      justify-content: space-around
       margin-top: 79px
       padding: 0 40px
-      justify-content: space-between
 
       &__card
         width: 220px
@@ -467,6 +468,10 @@ b, strong
       &__view
         width: 260px
         margin-left: 20px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
 
         &:hover
           .advantages__content__prices__view__bottom
@@ -483,6 +488,7 @@ b, strong
 
         &__bottom
           padding-bottom: 50px
+          width: 260px
           h3
             font-family: "Playfair Display"
             font-weight: bold
@@ -517,10 +523,10 @@ b, strong
 .footer
   background: url("../img/footerBg.png") no-repeat center center
   background-size: cover
-  padding-left: 16px
+  //padding-left: 16px
   &__content
     padding-top: 84px
-    height: 360px
+    min-height: 360px
     color: white
     display: flex
     justify-content: space-between
