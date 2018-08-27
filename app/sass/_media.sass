@@ -5,12 +5,26 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .modal-popup
+    display: none
+    position: fixed
+    width: 100%
+    height: 100vh
+    margin: 0!important
+    top: 0
+    left: 0
+    background-color: rgba(0,0,0, .5)
+
+    &.active
+      display: block
+
   .hero
+    position: relative
     img
       display: none
 
     .container
-
+      margin-top: 120px
     &__nav-mobile
       display: flex
       height: 60px
@@ -24,7 +38,9 @@
       img
         display: block!important
         position: static
-        margin-left: 30px
+        margin: 0
+        margin-left: 5%
+
   .hero__content
     flex-direction: column
     margin-top: 0
@@ -210,8 +226,9 @@
 
 // ≥576px
 +media-breakpoint-down(xs)
+  .hero__nav-mobile
+    background-color: transparent
   .hero__content
-    min-height: 95vh
     display: flex
     align-items: center
 

@@ -198,7 +198,7 @@ b, strong
       margin-bottom: 11px
       line-height: 77px
 
-    button
+    .choose
       width: 400px
       height: 100px
       background-color: transparent
@@ -587,6 +587,10 @@ b, strong
           line-height: 48px
           cursor: pointer
 
+          a
+            color: inherit
+
+
           &:hover
             color: #f6dcb2
 
@@ -713,6 +717,8 @@ b, strong
   height: 40px
   cursor: pointer
   padding-bottom: 3px
+  z-index: 10
+
 .burger
   position: relative
   width: 100%
@@ -753,6 +759,134 @@ b, strong
   transform: rotate(-405deg)
 
 
+
+
+.hero__nav-mobile__pop
+  flex-grow: 1
+  display: flex
+  margin-top: 2.6%
+
+
+
+@media (min-width: 1200px)
+  &.active
+    position: fixed
+    width: 100%
+    z-index: 999
+    display: flex
+    top: 0
+    left: 0
+    margin-top: 0
+    transition: .3s
+    padding-top: 1%
+    justify-content: center
+    padding-bottom: 1%
+
+
+    a
+      margin-left: 0
+      margin-right: 0
+      transition: .3s
+      padding-left: .7%
+      padding-right: .7%
+
+
+      &:first-child
+        transition: .3s
+        margin-left: 0
+
+
+      &:last-child
+        transition: .3s
+        margin-right: 0
+
+
+@media (max-width: 1200px)
+  display: flex
+  position: fixed
+  width: 100%
+  height: 100vh
+  background-color: rgba(0,0,0, .9)
+  z-index: 999
+  margin-top: 0
+  left: 0%
+  top: 0
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  transform: translateY(-100%)
+  transition: .3s
+
+  &.open_toggle
+    position: fixed
+    width: 100%
+    height: 100vh
+    background-color: rgba(0,0,0, .9)
+    z-index: 999
+    margin-top: 0
+    left: 0
+    top: 0
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    display: flex
+    transform: translateY(0%)
+    transition: .3s
+
+
+  a
+    color: #fff
+    font-size: 1.2rem
+    padding-left: 1.4%
+    padding-right: .3%
+    text-decoration: none
+
+    @media (max-width: 1200px)
+      font-size: 15px
+      padding-top: 8%
+      padding-left: 0
+      font-size: 15px
+
+
+    &:first-child
+      margin-left: auto
+
+      @media (max-width: 640px)
+        margin-left: 0
+
+    &:hover
+      text-decoration: underline
+
+.toogle_menu
+  display: none
+  width: 15%
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  position: relative
+  border: 0
+  outline: 0
+  background: transparent
+  outline: none!important
+
+  @media (max-width: 1200px)
+    display: flex
+    z-index: 1000
+    position: absolute
+    right: 5%
+
+  &.active
+    position: fixed
+
+
+  span
+    width: 3em
+    background-color: #fff
+    border-radius: 100px
+    height: .3em
+    margin-top: 5%
+    margin-bottom: 5%
+    transition: .6s
 
 
 
